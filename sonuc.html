@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampanya Sonuçları</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(255,0,0,0.5);
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+    }
+    .container img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(255,0,0,0.3);
+    }
+    h1 {
+      color: #ff0000;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #ff0000;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .bilgi, .performans {
+      margin: 20px 0;
+      text-align: left;
+    }
+    .bilgi p, .performans p {
+      background: #2a2a2a;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    strong {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Kampanya Başarılı!</h1>
+
+    <img id="afisResmi" src="https://m.media-amazon.com/images/I/71n58i7t7PL._AC_SL1500_.jpg" alt="Interstellar Film Afişi">
+
+    <div class="bilgi">
+      <p><strong>Film Adı:</strong> <span id="filmAdi"></span></p>
+      <p><strong>Açıklama:</strong> <span id="aciklama"></span></p>
+      <p><strong>Platform:</strong> Instagram</p>
+      <p><strong>Reklam Türü:</strong> Video Reklam</p>
+    </div>
+
+    <div class="performans">
+      <h2>📊 Reklam Performansı</h2>
+      <p><strong>Gösterim:</strong> <span id="gosterim"></span> kişi</p>
+      <p><strong>Tıklama:</strong> <span id="tiklama"></span> kişi</p>
+      <p><strong>Dönüşüm:</strong> <span id="donusum"></span> kişi</p>
+      <p><strong>ROI:</strong> <span id="roi"></span></p>
+    </div>
+  </div>
+
+  <script src="veriler.js"></script>
+</body>
+</html>
